@@ -1,19 +1,18 @@
 import streamlit as st
-import 어서와
-import 날봐
-import 여기를클릭하세요
+import Home
+import first
+import second
 
-def app():
-    st.title("어서와!")
-    st.write("이런 곳은 처음이지?ㅋㅋ")
+def app():Home")
+    st.write("Welcome to Homepage")
 
-page = st.sidebar.selectbox("Select a page", ["어서와!","날 봐!","여기를 클릭하세요"])
+page = st.sidebar.selectbox("Select a page", ["Home","first","second"])
 
-if page == "어서와!":
+if page == "Home":
     Home.app()
-elif page =="날 봐!":
+elif page =="first":
     first.app()
-elif page =="여기를 클릭하세요":
+elif page =="second":
     second.app()
 
 # st.title("메인 페이지")
