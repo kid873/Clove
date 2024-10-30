@@ -3,16 +3,17 @@ import Home
 import first
 import second
 
-def app():Home")
-    st.write("Welcome to Homepage")
+def app():
+    st.title("Home")
+    st.write("Welcome to the Home page!")
 
-page = st.sidebar.selectbox("Select a page", ["Home","first","second"])
+page = st.sidebar.selectbox("Select a page", ["Hey","Look at me!","Hurry up"])
 
-if page == "Home":
+if page == "Hey":
     Home.app()
-elif page =="first":
+elif page =="Look at me!":
     first.app()
-elif page =="second":
+elif page =="Hurry up":
     second.app()
 
 # st.title("메인 페이지")
